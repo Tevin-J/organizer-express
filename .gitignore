@@ -4,6 +4,5 @@
 /logs/
 /config
 .scannerwork/
-**/*.js
 /dist
 .npmrc
