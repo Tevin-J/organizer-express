@@ -3,14 +3,14 @@ dotenv.config();
 import express, { json } from 'express';
 import { connect } from 'mongoose';
 import cors from 'cors';
-import todoRoutes from './routes/todos.js';
+import tasksRoutes from './routes/tasks.js';
 import { urlencoded } from 'express';
 
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(json());
 app.use(cors());
-app.use(todoRoutes);
+app.use('/tasks', tasksRoutes);
 app.use(urlencoded({ extended: true }));
 
 async function start() {

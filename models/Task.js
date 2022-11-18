@@ -10,4 +10,4 @@ const schema = new Schema({
   },
 });
 
-export default model('Todo', schema);
+export default model('Task', schema);
